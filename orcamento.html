@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,200' rel='stylesheet' type='text/css'>    
+  </head>
+  <body>
+  <!--Logo da Empresa-->
+  <div class="container">
+      <div class="row">
+          <div class="col-xs-12">
+              <a href="index.html">
+                  <img src="imagem/logo.png" class="img-responsive center-block">
+              </a>
+          </div>
+      </div>
+  </div>
+  <!--Fim Logo da Empresa-->
+  <!--Menu -->
+  <div class="container-fluid">
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="menu">
+           <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quemsomos.html">Quem Somos</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="orcamento.html">Orçamento</a></li>
+            <li><a href="euIndico.html">Eu Indico</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="faleConosco.html">Fale Conosco</a></li> 
+          </ul>
+        </div>
+      </nav>
+  </div>
+  <!--Fim do Menu -->
+  <!--Orcamento-->
+  <div class="container">
+   <div class="page-header">
+       <h1 class="text-center">Solicite um Orçamento</h1>
+   </div>
+    <form class="form-horizontal" id="formOrcamento" method="post" action="enviar-orcamento.php" >
+        <div class="form-group">
+              <label class="control-label col-xs-12 col-md-3 col-sm-3" for="nome">Nome *:</label>
+              <div class="col-xs-12 col-md-7 col-sm-7">
+                 <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome">
+              </div>
+        </div>
+        <div class="form-group">
+              <label class="control-label col-xs-12 col-md-3 col-sm-3" for="email">E-mail *:</label>
+              <div class="col-xs-12 col-md-7 col-sm-7">
+                 <input type="text" class="form-control" id="email" name="email" placeholder="Digite o e-mail" >
+              </div>
+        </div>
+        <div class="form-group">
+              <label class="control-label col-xs-12 col-md-3 col-sm-3" for="cidade">Cidade *:</label>
+              <div class="col-xs-12 col-md-7 col-sm-7">
+                 <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Digite a cidade">
+              </div>
+        </div>
+        <div class="form-group">
+              <label class="control-label col-xs-12 col-md-3 col-sm-3" for="localFesta">Local da Festa *:</label>
+              <div class="col-xs-12 col-md-7 col-sm-7">
+                 <input type="text" class="form-control" id="localFesta" name="localFesta" placeholder="Digite o Local da Festa" >
+              </div>
+        </div>
+        <div class="form-group">
+              <label class="control-label col-xs-12 col-md-3 col-sm-3" for="telefone">Tel. Residencial *:</label>
+              <div class="col-xs-12 col-md-7 col-sm-7">
+                 <input type="text" class="form-control" id="telefone"  name="telefone" placeholder="(99) 9999-9999" >
+              </div>
+        </div>
+        <div class="form-group">
+              <label class="control-label col-xs-12 col-md-3 col-sm-3" for="celular">Tel. Celular *:</label>
+              <div class="col-xs-12 col-md-7 col-sm-7">
+                 <input type="text" class="form-control" id="celular" name="celular" placeholder="(99) 99999-9999">
+              </div>
+        </div>
+        <div class="form-group">
+              <label class="control-label col-xs-12 col-md-3 col-sm-3" for="dataFesta">Data da Festa *:</label>
+              <div class="col-xs-12 col-md-7 col-sm-7">
+                   <input type="text" class="form-control" id="dataFesta" name="dataFesta" placeholder="dd/mm/yyy">
+              </div>
+        </div>
+        <div class="form-group">
+            <div class="page-header">
+                <h2 class="text-center">Lista de produtos</h2>
+            </div>  
+        </div>
+        <div class="form-group">
+              <div class="row">
+                   <div class="col-xs-12 col-md-3 col-sm-3">
+                    </div>
+                    <div class="col-xs-12 col-md-9 col-sm-9 error-produto">
+                         <label id="produtos[]-error" for="produtos[]" class="error"></label> 
+                    </div>
+              </div>
+              <label class="control-label col-xs-12 col-md-3 col-sm-3">Brinquedos:</label>
+              <div class="col-xs-11 col-md-7 col-sm-7">
+                    <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="CamaElaticaPequeno">Cama Elástica Pequeno</label>
+                    <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="CamaElasticaMedia">Cama Elástica Media</label>
+                    <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="CamaElasticaGrande">Cama Elástica Grande</label>
+                    <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="PiscinaBolinaPesqueno">Piscina de bolina Pequeno</label>
+                    <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="PiscinaBolinhaGrande">Piscina de bolina Grande</label>
+                    <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="PiscinaBolinhaInflavel">Piscina de bolina Inflavel</label>
+                    <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="CastelinhoPulaInflavelPequeno">Castelinho pula pula inflavel - Pequeno</label>
+                    <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="CastelinhoPulaInflavelGrande">Castelinho pula pula inflavel - Grande</label>
+                    <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="MultiPark">Multi Park</label>
+                    <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="MiniToboga">Mini Tobogã</label>
+                    <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="TobogaTradicional">Tobogã Tradicional</label>
+                    <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="TobogaJacare">Tobogã Jacaré</label>
+                    <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="TobogaBarco">Tobogã Barco</label>
+                    <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="BasqueteInflavel">Basquete inflável </label>
+                    <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="Brnquedao5x1">Briquedão 5 em 1</label>
+                    <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="FutebolInflavel">Futebol Inflável</label>
+                    <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="GolShow">Gol Show</label>
+                    <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="AirGame">Air Game</label>
+                    <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="Pebolim">Pebolim</label>
+                    <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="TouroMecanico">Touro Mecânico</label>
+                    <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="Walterball">Walterball</label>
+              </div>
+        </div>
+        <div class="form-group">
+              <label class="control-label col-xs-12 col-md-3 col-sm-3">Recreação e Animação:</label>
+              <div class="col-xs-12 col-md-7 col-sm-7">
+                  <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="Recreacao">Recreação (Jogos e Brincadeiras)</label>
+                  <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="PinturaFacial">Pintura Facial</label>
+                  <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="EsculturaBalao">Escultura de Balões</label>
+                  <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="ContadoresHistoria">Contadores de História</label> 
+              </div>
+        </div>
+        <div class="form-group">
+              <label class="control-label col-xs-12 col-md-3 col-sm-3">Serviços de Barracas:</label>
+              <div class="col-xs-12 col-md-7 col-sm-7">
+                  <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="BarracaPipoca">Barraca de Pipoca</label>
+                  <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="BarracaDog">Barraca de Dog</label>
+                  <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="BarrcaAlgodaoDoce">Barraca de Algodão doce</label>
+                  <label class="checkbox-inline"><input type="checkbox" name="produtos[]" value="BarrcaPastel">Barraca de pastel</label>
+                  
+              </div>
+             
+        </div>
+        <div class="form-group">
+              <label class="control-label col-xs-12 col-md-3 col-sm-3" for="mensagem">Messagem do Produto *:</label>
+              <div class="col-xs-12 col-md-7 col-sm-7">
+                 <textarea class="form-control" rows="5" id="mensagem" name="mensagem" placeholder="Digite a mensagem"></textarea>
+              </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-12 col-md-6 col-md-offset-3 col-sm-offset-3">
+                <label class="control-label">Todos os campos com * são obrigatórios</label>
+            </div>
+        </div>
+	    <div class="form-group">
+		  <div class="col-xs-12 col-md-6 col-md-offset-3 col-sm-offset-3">
+			 <button type="submit" class="btn btn-primary">Enviar</button>
+		  </div>
+	    </div>
+    </form>
+  </div>
+  <!--Fim Orcamento-->    
+  <!--Rodape -->
+  <div class="container-fluid">
+      <footer>
+          <div class="row">
+              <div class="col-xs-12 col-md-12">
+                <p class="text-center copy">© 2010-2016 FabriFesta Diversão</p>
+              </div>
+              <div class="col-xs-12 col-md-12">
+                <ul class="list-inline text-center contato">
+                    <li class="contato"><i class="fa fa-fw fa-whatsapp"></i>55 11 2805-6613</li>
+                    <li class="contato"><i class="fa fa-fw fa-phone"></i>55 11 99512-4741</li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-md-12">
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="https://www.facebook.com/fabrifesta.diversaogarantida" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/fabrifesta1" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/fabrifesta" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
+                    </li>
+                </ul>
+              </div>
+          </div>
+      </footer>
+  </div>
+  <!--Fim do Rodape -->
+      <script src="js/jquery-2.2.4.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.validate.min.js"></script>
+      <script src="js/additional-methods.min.js"></script>
+      <script src="js/validateBR.js"></script>
+      <script src="js/jquery.maskedinput.min.js"></script>
+      <script src="js/orcamento.js"></script>
+  </body>
+</html>

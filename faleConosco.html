@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+    <link href="css/anima.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,200' rel='stylesheet' type='text/css'>    
+  </head>
+  <body>
+
+  <div class="container">    
+      <div class="row">
+        <div class="col-md-12">
+            <img src="imagem/logo.png" class="img-responsive center-block">
+        </div>
+      </div>
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="menu">
+           <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quemSomos.html">Quem Somos</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="orcamento.html">Orçamento</a></li>
+            <li><a href="euIndico.html">Eu Indico</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="faleConosco.html">Fale Conosco</a></li> 
+          </ul>
+        </div>
+      </nav>
+  </div>
+<div class="container">
+    <div class="page-header text-center">
+      <h1>Fale Conosco</h1>
+    </div>  
+   <form class="form-horizontal">
+        <div class="form-group">
+              <label class="control-label col-xs-12 col-md-3 col-sm-3" for="nome">Nome *:</label>
+              <div class="col-xs-12 col-md-7 col-sm-7">
+                 <input type="text" class="form-control" id="nome" placeholder="Digite o nome">
+              </div>
+        </div>
+        <div class="form-group">
+              <label class="control-label col-xs-12 col-md-3 col-sm-3" for="email">Email *:</label>
+              <div class="col-xs-12 col-md-7 col-sm-7">
+                 <input type="text" class="form-control" id="email" placeholder="Digite o email">
+              </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-xs-12 col-md-3 col-sm-3" for="cidade">Cidade *:</label>
+          <div class="col-xs-12 col-md-7 col-sm-7">
+             <input type="text" class="form-control" id="cidade" placeholder="Digite o cidade">
+          </div>
+        </div>
+       <div class="form-group">
+          <label class="control-label col-xs-12 col-md-3 col-sm-3" for="residencial">Tel Residencial *:</label>
+          <div class="col-xs-12 col-md-7 col-sm-7">
+             <input type="text" class="form-control" id="residencial" placeholder="Digite o tefefone">
+          </div>
+        </div>
+       <div class="form-group">
+          <label class="control-label col-xs-12 col-md-3 col-sm-3" for="celular">Tel Celular *:</label>
+          <div class="col-xs-12 col-md-7 col-sm-7">
+             <input type="text" class="form-control" id="celular" placeholder="Digite o cidade" maxlength="2">
+          </div>
+        </div>
+        <div class="form-group">
+              <label class="control-label col-xs-12 col-md-3 col-sm-3">Messagem *:</label>
+              <div class="col-xs-12 col-md-7 col-sm-7">
+                 <textarea class="form-control" rows="5" id="mensagem" placeholder="Digite a mensagem"></textarea>
+              </div>
+          </div>
+        <div class="form-group">
+            <div class="col-xs-12 col-md-6 col-md-offset-3 col-sm-offset-3">
+                    <label class="control-label">Todos os campos com * são obrigatórios</label>
+              </div>
+        </div>
+       <div class="form-group">
+              <div class="col-xs-12 col-md-6 col-md-offset-3 col-sm-offset-3">
+                 <button type="submit" class="btn btn-primary" onclick="validarForm()">Enviar</button>
+              </div>
+          </div>
+    </form>
+	
+</div>
+  <div class="container">
+     <footer>
+          <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <p class="text-center copy">© 2010-2016 FabriFesta Diversão</p>
+            </div>
+			<div class="col-xs-12 col-md-12">
+                <ul class="list-inline text-center contato">
+                    <li class="contato"><i class="fa fa-fw fa-whatsapp"></i>55 11 2805-6613</li>
+                    <li class="contato"><i class="fa fa-fw fa-phone"></i>55 11 99512-4741</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-md-12">
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="https://www.facebook.com/fabrifesta.diversaogarantida" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/fabrifesta1" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/fabrifesta" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+         </div>
+     </footer>  
+ </div>
+      
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
