@@ -8,6 +8,8 @@
 	
 	.call-to-action-text p { width: 75%; }
 	.call-to-action-text .call-to-action-button { width: 25%; }
+	.about-us-container { height: 100% }
+	
 	
 }
 
@@ -31,7 +33,7 @@
 	.call-to-action-text .call-to-action-button { width: 25%; text-align: center; }
 	
 	.flickr-feed a { width: 50px; margin-right: 2px; }
-
+	.about-us-container { height: 100% }
 }
 
 @media (max-width: 767px) {
