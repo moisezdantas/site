@@ -524,7 +524,7 @@ footer {
 
 .about-us-container {
     margin-top: 20px;
-    min-height: 550px
+    min-height: auto
 }
 
 .about-us-text {
